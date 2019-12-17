@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # platzi_trips_app
 
 My first flutter application did with the Platzi&#x27;s flutter course
@@ -14,3 +15,7 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+# FlutterPlatziTrips
+First application project made with flutter and following the Platzi's course of Flutter
+>>>>>>> 74ca37c4a5e5a4650bfd8ea719a132d6915a7fd6
