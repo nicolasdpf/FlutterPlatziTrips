@@ -6,66 +6,50 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    // TODO: implement build
     return MaterialApp(
-      title: 'Flutter Trips',
+      title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.deepPurple
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Hola Mundo")
+          title: Text("Segundo Reto"),
         ),
         body: Center(
-          child: Text('HolaMundo'),
+          child: Stack(
+            children: <Widget>[
+              Center(
+                child: Image.network("https://i.pinimg.com/originals/c3/36/40/c33640433e98f7a7b43aeb8cb468ff34.jpg",
+                  fit: BoxFit.cover,
+                  height: double.maxFinite,
+                  alignment: Alignment.bottomCenter,
+                  width: double.maxFinite,
+                ),
+              ),
+              Center(
+                child: Opacity(
+                  opacity: 0.3,
+                  child: Container(
+                    color: Colors.black,
+                    width: 500,
+                    height: 80,
+                  ),
+                )
+              ),
+              Center(
+                child: Text("Are you shining just 4 me?",
+                  style: TextStyle(
+                    color: Colors.yellow,
+                    fontSize: 20,
+                    fontWeight: FontWeight.normal
+                  ),
+                )
+              )
+            ]
+          )
         ),
-      )//MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(//Estructura de la aplicacion
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      )
     );
   }
 }
