@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:platzi_trips_app/description_place.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
+  String descriptionDummy = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id blandit justo. Quisque fringilla mi nec faucibus posuere. Maecenas sit amet eros at justo pulvinar blandit id vel tortor. Phasellus quam libero, dictum eu sagittis a, auctor sit amet nisi. Pellentesque malesuada elit nec scelerisque tristique. Nulla at blandit magna. Etiam at ornare justo. Proin maximus malesuada ultrices. Aenean sit amet fringilla dui. Proin non eros non nulla varius mollis nec vitae lorem. Donec augue neque, elementum a gravida euismod, auctor et nisl. Vivamus consequat auctor mauris, vitae venenatis erat hendrerit ac.";
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -16,39 +19,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("Segundo Reto"),
         ),
-        body: Center(
-          child: Stack(
-            children: <Widget>[
-              Center(
-                child: Image.network("https://i.pinimg.com/originals/c3/36/40/c33640433e98f7a7b43aeb8cb468ff34.jpg",
-                  fit: BoxFit.cover,
-                  height: double.maxFinite,
-                  alignment: Alignment.bottomCenter,
-                  width: double.maxFinite,
-                ),
-              ),
-              Center(
-                child: Opacity(
-                  opacity: 0.3,
-                  child: Container(
-                    color: Colors.black,
-                    width: 500,
-                    height: 80,
-                  ),
-                )
-              ),
-              Center(
-                child: Text("Are you shining just 4 me?",
-                  style: TextStyle(
-                    color: Colors.yellow,
-                    fontSize: 20,
-                    fontWeight: FontWeight.normal
-                  ),
-                )
-              )
-            ]
-          )
-        ),
+        body: new DescriptionPlace("Danilo Peña", 4, descriptionDummy),
       )
     );
   }
