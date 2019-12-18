@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:platzi_trips_app/description_place.dart';
-
+import 'package:platzi_trips_app/review_list.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -17,9 +17,17 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Segundo Reto"),
+          title: Text(
+              "Segundo Reto",
+              style: TextStyle(
+                fontFamily: "Lato",
+                fontWeight: FontWeight.w100
+              ),
+              textAlign: TextAlign.end
+          ),
         ),
-        body: new DescriptionPlace("Danilo Peña", 4, descriptionDummy),
+        //body: new DescriptionPlace("Danilo Peña", 4, descriptionDummy),
+        body: ReviewList(),
       )
     );
   }
