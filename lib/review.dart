@@ -2,11 +2,66 @@ import 'package:flutter/material.dart';
 
 class Review extends StatelessWidget {
   String pathImage = "assets/img/mohamed.jpg";
+  String name = "Varuna Yasas";
+  String details = "1 review, 5 photos";
+  String comment = "There is only an amazing place in Sri Lanka";
 
-  Review(this.pathImage)
+  Review(this.pathImage, this.name, this.details, this.comment);
+
   @override
   Widget build(BuildContext context) {
+    final userComment = Container(
+      margin: EdgeInsets.only(
+          left: 20.0
+      ),
+      child: Text(
+        details,
+        textAlign: TextAlign.left,
+        style: TextStyle(
 
+          fontFamily: "Lato",
+          fontSize: 12.0,
+          fontWeight: FontWeight.w900
+        ),
+      ),
+    );
+    final userInfo = Container(
+      margin: EdgeInsets.only(
+          left: 20.0
+      ),
+      child: Text(
+        details,
+        textAlign: TextAlign.left,
+        style: TextStyle(
+            fontFamily: "Lato",
+            fontSize: 12.0,
+            color: Color(0xFFa3a5a7)
+        ),
+      ),
+    );
+    
+    final userName = Container(
+      margin: EdgeInsets.only(
+        left: 20.0
+      ),
+      child: Text(
+        name,
+        textAlign: TextAlign.left,
+        style: TextStyle(
+          fontFamily: "Lato",
+          fontSize: 16.0
+        ),
+      ),
+    );
+
+    final userDetails = Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        userName,
+        userInfo,
+        userComment
+      ],
+    );
     final photo = Container (
       margin: EdgeInsets.only(
         top: 20.0,
@@ -28,6 +83,8 @@ class Review extends StatelessWidget {
 
     return Row(
       children: <Widget>[
+        photo,
+        userComment
       ],
     );
   }
