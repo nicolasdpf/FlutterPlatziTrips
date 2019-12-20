@@ -4,7 +4,7 @@ import 'package:platzi_trips_app/review_list.dart';
 import 'description_place.dart';
 import 'gradient_back.dart';
 import 'package:flutter/services.dart';
-
+import 'package:platzi_trips_app/header_appbar.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
                   ReviewList()
                 ],
               ),
-              GradientBack(title)
+              HeaderAppBar()
             ],
           ),
         )
