@@ -72,6 +72,13 @@ flutter:
   # see https://flutter.dev/custom-fonts/#from-packages
   assets:
     - assets/img/mohamed.jpg
+    - assets/img/eberhard-grossgasteiger-TMHL7wald8I-unsplash.jpg
+    - assets/img/janke-laskowski-WJyCRU1m7h8-unsplash.jpg
+    - assets/img/martin-schmidli-h24WdfmRni4-unsplash.jpg
+    - assets/img/olga-manko-_1xzcjQaTWc-unsplash.jpg
+    - assets/img/raquel-garcia-BAiSZDx4LgE-unsplash.jpg
+    - assets/img/tevin-trinh--QbVBqWlOJg-unsplash.jpg
+    - assets/img/tomas-malik-ANCoz0JMhiQ-unsplash.jpg
 
   fonts:
     - family: Lato
