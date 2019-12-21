@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:platzi_trips_app/description_place.dart';
-import 'package:platzi_trips_app/review_list.dart';
-import 'description_place.dart';
-import 'gradient_back.dart';
 import 'package:flutter/services.dart';
-import 'package:platzi_trips_app/header_appbar.dart';
+
+import 'platzi_trips.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -24,8 +22,7 @@ class MyApp extends StatelessWidget {
             primarySwatch: Colors.deepPurple
         ),
         home: Scaffold(
-          //body: new DescriptionPlace("Danilo Peña", 4, descriptionDummy),
-          body: ,
+          body: PlatziTrips(),
         )
     );
   }
