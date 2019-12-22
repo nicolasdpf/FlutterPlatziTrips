@@ -79,6 +79,7 @@ flutter:
     - assets/img/raquel-garcia-BAiSZDx4LgE-unsplash.jpg
     - assets/img/tevin-trinh--QbVBqWlOJg-unsplash.jpg
     - assets/img/tomas-malik-ANCoz0JMhiQ-unsplash.jpg
+    - assets/img/profileP.jpg
 
   fonts:
     - family: Lato
