@@ -22,6 +22,9 @@ class ReviewProfile extends StatelessWidget{
       ),
     );
     final myEmail = Container(
+      margin: EdgeInsets.only(
+        top:40,
+      ),
       child: Text(
         email,
         textAlign: TextAlign.left,
@@ -35,6 +38,12 @@ class ReviewProfile extends StatelessWidget{
     );
 
     final photo = Container(
+      margin: EdgeInsets.only(
+        top: 40.0,
+        left: 20.0
+      ),
+      width: 80,
+      height: 80,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         image: DecorationImage(
@@ -44,13 +53,13 @@ class ReviewProfile extends StatelessWidget{
     );
 
     final userDetails = Column(
-
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         myName,
         myEmail,
       ],
     );
+    //return photo;
     return Row(
       children: <Widget>[
         photo,

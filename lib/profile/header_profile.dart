@@ -6,13 +6,8 @@ class HeaderProfile extends StatelessWidget{
   Widget build(BuildContext context) {
     return Stack(
       children: <Widget>[
-        ListView(
-          children: <Widget>[
-          GradientBack("Profile", 300.0),
-          ReviewProfile("assets/img/profileP.jpg","Danilo Peña", "nicolasdpf@gmail.com")
-
-          ],
-        ),
+        GradientBack("Profile", 300.0),
+        ReviewProfile("assets/img/profileP.jpg","Danilo Peña", "nicolasdpf@gmail.com"),
       ],
     );
   }

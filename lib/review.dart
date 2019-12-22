@@ -10,6 +10,7 @@ class Review extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     final userComment = Container(
       margin: EdgeInsets.only(
           left: 20.0
@@ -24,6 +25,7 @@ class Review extends StatelessWidget {
         ),
       ),
     );
+
     final userInfo = Container(
       margin: EdgeInsets.only(
           left: 20.0
@@ -61,6 +63,7 @@ class Review extends StatelessWidget {
         userComment
       ],
     );
+
     final photo = Container (
       margin: EdgeInsets.only(
         top: 20.0,
